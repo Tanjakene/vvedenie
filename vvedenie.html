@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Порядок слов в русском языке | 俄语词序</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family:"Segoe UI","PingFang SC","Microsoft YaHei",Arial,sans-serif;
+    background:linear-gradient(160deg,#f0f4ff,#fdf6ec);
+    color:#2b2b2b; line-height:1.9; padding:20px;
+  }
+  .container { max-width:820px; margin:0 auto; }
+  header { text-align:center; margin:30px 0 10px; }
+  h1 { color:#1a3c8f; font-size:1.9em; }
+  .subtitle { color:#777; margin-top:8px; }
+  .instructions {
+    background:#fff8e1; border:1px solid #ffd54f; border-radius:12px;
+    padding:14px 18px; margin:20px 0; font-size:0.97em;
+  }
+  section.card {
+    background:#fff; border-radius:16px; padding:26px 30px;
+    margin:24px 0; box-shadow:0 4px 16px rgba(0,0,0,0.07);
+  }
+  h2 { color:#1a3c8f; margin-bottom:16px; font-size:1.3em; }
+  p.text { margin-bottom:14px; font-size:1.05em; }
+  .word {
+    color:#0b6e4f; font-weight:600; cursor:pointer;
+    border-bottom:2px dotted #0b6e4f; padding:0 2px;
+  }
+  .word:hover { background:#d8f3e3; border-radius:4px; }
+  .tooltip {
+    position:absolute; display:none; background:#0b3d2e; color:#fff;
+    padding:10px 14px; border-radius:10px; font-size:0.95em;
+    max-width:280px; z-index:100; box-shadow:0 6px 18px rgba(0,0,0,0.3);
+  }
+  .tooltip .zh { font-size:1.2em; font-weight:700; display:block; }
+  .tooltip .py { color:#a8e6cf; font-size:0.9em; }
+  .question { margin:22px 0; padding-bottom:8px; }
+  .q-title { font-weight:700; margin-bottom:8px; }
+  .options label {
+    display:block; padding:10px 14px; margin:6px 0;
+    border:2px solid #e0e0e0; border-radius:10px; cursor:pointer;
+  }
+  .options label:hover { border-color:#1a3c8f; background:#f0f5ff; }
+  .options input { margin-right:8px; }
+  .options label.correct { border-color:#2e7d32; background:#e8f5e9; }
+  .options label.wrong { border-color:#c62828; background:#ffebee; }
+  button {
+    background:#1a3c8f; color:#fff; border:none; padding:12px 28px;
+    border-radius:10px; font-size:1em; cursor:pointer; margin-top:12px;
+  }
+  button:hover { background:#12306f; }
+  #result { margin-top:16px; font-weight:700; font-size:1.1em; color:#1a3c8f; }
+  .qblock { margin:20px 0; }
+  textarea {
+    width:100%; min-height:70px; border:2px solid #e0e0e0; border-radius:10px;
+    padding:10px; font-family:inherit; font-size:0.97em; margin-top:6px;
+  }
+  .hint-btn {
+    background:#e8f0fe; color:#1a3c8f; padding:6px 14px;
+    font-size:0.85em; margin-top:8px;
+  }
+  .hint {
+    display:none; background:#f1f8ff; border-left:4px solid #1a3c8f;
+    padding:10px 14px; border-radius:6px; margin-top:8px;
+    color:#444; font-size:0.93em;
+  }
+  footer { text-align:center; color:#999; font-size:0.85em; margin:30px 0; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>Порядок слов в русском языке</h1>
+    <p class="subtitle">Интерактивный текст для учащихся уровня А2 · 俄语词序互动课文</p>
+  </header>
+
+  <div class="instructions">
+    💡 Нажмите на <span class="word" style="cursor:default">выделенное слово</span>, чтобы увидеть перевод на китайский язык.<br>
+    点击绿色虚线标记的单词，可以查看中文翻译和拼音。
+  </div>
+
+  <!-- ======================= ТЕКСТ ======================= -->
+  <section class="card">
+    <h2>📖 Текст: Почему порядок слов важен?</h2>
+
+    <p class="text"><span class="word" data-zh="词序" data-py="cíxù">Порядок слов</span> — это <span class="word" data-zh="排列，位置" data-py="páiliè / wèizhì">расположение</span> слов в <span class="word" data-zh="句子" data-py="jùzi">предложении</span> или <span class="word" data-zh="词组" data-py="cízǔ">словосочетании</span>. Порядок слов играет важную роль в <span class="word" data-zh="交流，交际" data-py="jiāoliú">общении</span>. Если <span class="word" data-zh="违反，弄乱" data-py="wéifǎn">нарушить</span> порядок слов, <span class="word" data-zh="对方，谈话对象" data-py="duìfāng">собеседник</span> может не понять <span class="word" data-zh="意思，含义" data-py="yìsi">смысл</span> или понять его неправильно.</p>
+
+    <p class="text">Многие думают, что в русском языке порядок слов <span class="word" data-zh="自由的" data-py="zìyóu de">свободный</span>. Это неверно. Русский язык имеет относительно свободный порядок слов, но правильный порядок <span class="word" data-zh="保证，确保" data-py="bǎozhèng">обеспечивает</span> смысловую <span class="word" data-zh="准确性" data-py="zhǔnquèxìng">точность</span> и <span class="word" data-zh="连贯性" data-py="liánguànxìng">связность</span> текста. Иностранцы, которые не знают <span class="word" data-zh="规则" data-py="guīzé">правил</span>, часто делают <span class="word" data-zh="错误" data-py="cuòwù">ошибки</span>.</p>
+
+    <p class="text">В русском языке есть <span class="word" data-zh="实际切分（句子功能切分）" data-py="shíjì qiēfēn">актуальное членение</span> предложения: <span class="word" data-zh="主位（话题）" data-py="zhǔwèi">тема</span> и <span class="word" data-zh="述位（新信息）" data-py="shùwèi">рема</span>. Тема — это то, о чём мы говорим (старая информация). Рема — это новая информация. Обычно тема стоит в начале предложения, а рема — в конце. Например: <em>Мама читает книгу</em>. Здесь «Мама» — тема, а «читает книгу» — рема.</p>
+
+    <p class="text">В китайском языке порядок слов более <span class="word" data-zh="严格的" data-py="yángé de">строгий</span>. Поэтому у китайских <span class="word" data-zh="学生" data-py="xuéshēng">учащихся</span> часто возникает <span class="word" data-zh="语际干扰" data-py="yǔjì gānrǎo">межъязыковая интерференция</span>: они строят русские предложения по китайской модели и делают ошибки.</p>
+
+    <p class="text">Учёные предлагают специальную <span class="word" data-zh="教学法" data-py="jiàoxuéfǎ">методику</span> обучения порядку слов. Учащиеся изучают правила <span class="word" data-zh="循序渐进地" data-py="xúnxù jiànjiàn de">поэтапно</span>: сначала порядок слов в словосочетаниях, потом — в предложениях. Они выполняют языковые и речевые <span class="word" data-zh="练习" data-py="liànxí">упражнения</span>: от анализа и <span class="word" data-zh="训练" data-py="xùnliàn">тренировки</span> до свободного <span class="word" data-zh="说，口语表达" data-py="shuō">говорения</span> и письма.</p>
+
+    <p class="text">Учащиеся 12 класса китайской средней школы обычно достигают <span class="word" data-zh="水平，等级" data-py="shuǐpíng">уровня</span> А2. На этом уровне их <span class="word" data-zh="词汇量" data-py="cíhuìliàng">словарный запас</span> уже достаточен, чтобы <span class="word" data-zh="掌握" data-py="zhǎngwò">овладеть</span> основными <span class="word" data-zh="结构" data-py="jiégòu">конструкциями</span> порядка слов.</p>
+  </section>
+
+  <!-- ======================= ТЕСТ ======================= -->
+  <section class="card">
+    <h2>✏️ Тест на понимание текста · 阅读理解测试</h2>
+
+    <div class="question">
+      <div class="q-title">1. Что такое порядок слов?</div>
+      <div class="options">
+        <label data-correct><input type="radio" name="q1"> Расположение слов в предложении или словосочетании</label>
+        <label><input type="radio" name="q1"> Количество слов в тексте</label>
+        <label><input type="radio" name="q1"> Перевод слова на другой язык</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <div class="q-title">2. Порядок слов в русском языке...</div>
+      <div class="options">
+        <label><input type="radio" name="q2"> абсолютно свободный</label>
+        <label data-correct><input type="radio" name="q2"> относительно свободный</label>
+        <label><input type="radio" name="q2"> такой же строгий, как в китайском</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <div class="q-title">3. Что такое «тема» предложения?</div>
+      <div class="options">
+        <label><input type="radio" name="q3"> Новая информация</label>
+        <label data-correct><input type="radio" name="q3"> Старая информация, то, о чём мы говорим</label>
+        <label><input type="radio" name="q3"> Самое важное слово в тексте</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <div class="q-title">4. Где обычно стоит рема?</div>
+      <div class="options">
+        <label><input type="radio" name="q4"> В начале предложения</label>
+        <label data-correct><input type="radio" name="q4"> В конце предложения</label>
+        <label><input type="radio" name="q4"> Всегда перед темой</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <div class="q-title">5. Почему китайские учащиеся делают ошибки в русском порядке слов?</div>
+      <div class="options">
+        <label data-correct><input type="radio" name="q5"> Из-за межъязыковой интерференции</label>
+        <label><input type="radio" name="q5"> Потому что они не учат новые слова</label>
+        <label><input type="radio" name="q5"> Потому что в русском языке нет правил</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <div class="q-title">6. Что изучают сначала по методике?</div>
+      <div class="options">
+        <label><input type="radio" name="q6"> Порядок слов в предложениях</label>
+        <label><input type="radio" name="q6"> Только связные тексты</label>
+        <label data-correct><input type="radio" name="q6"> Порядок слов в словосочетаниях, потом в предложениях</label>
+      </div>
+    </div>
+
+    <button id="checkBtn">Проверить ответы ✓</button>
+    <div id="result"></div>
+  </section>
+
+  <!-- ======================= ЗАДАНИЕ ======================= -->
+  <section class="card">
+    <h2>💬 Задание: ответьте на вопросы · 问答题</h2>
+    <p class="text" style="font-size:0.95em;color:#666;">Напишите ответы своими словами. Если трудно — нажмите «Подсказка». 请用自己的话回答问题，遇到困难可以看“提示”。</p>
+
+    <div class="qblock">
+      <div class="q-title">1. Почему порядок слов важен в общении?</div>
+      <textarea placeholder="Ваш ответ..."></textarea>
+      <button class="hint-btn">Подсказка 💡</button>
+      <div class="hint">Образец: Порядок слов важен, потому что если нарушить порядок слов, собеседник может не понять смысл высказывания.</div>
+    </div>
+
+    <div class="qblock">
+      <div class="q-title">2. Правда ли, что порядок слов в русском языке абсолютно свободный? Объясните.</div>
+      <textarea placeholder="Ваш ответ..."></textarea>
+      <button class="hint-btn">Подсказка 💡</button>
+      <div class="hint">Образец: Нет, это неверно. Русский язык имеет относительно свободный порядок слов, но правильный порядок обеспечивает точность и связность текста.</div>
+    </div>
+
+    <div class="qblock">
+      <div class="q-title">3. Что такое тема и рема? Придумайте свой пример и назовите тему и рему.</div>
+      <textarea placeholder="Ваш ответ..."></textarea>
+      <button class="hint-btn">Подсказка 💡</button>
+      <div class="hint">Образец: Тема — старая информация, рема — новая. Например: «Студент читает текст». «Студент» — тема, «читает текст» — рема.</div>
+    </div>
+
+    <div class="qblock">
+      <div class="q-title">4. Чем отличается порядок слов в русском и китайском языках?</div>
+      <textarea placeholder="Ваш ответ..."></textarea>
+      <button class="hint-btn">Подсказка 💡</button>
+      <div class="hint">Образец: В китайском языке порядок слов строгий и фиксированный, а в русском языке — относительно свободный.</div>
+    </div>
+
+    <div class="qblock">
+      <div class="q-title">5. Практика: поставьте слова в правильном порядке: <em>книгу / читает / мама</em>. Что здесь тема, а что рема?</div>
+      <textarea placeholder="Ваш ответ..."></textarea>
+      <button class="hint-btn">Подсказка 💡</button>
+      <div class="hint">Образец: Мама читает книгу. «Мама» — тема (в начале), «читает книгу» — рема (в конце).</div>
+    </div>
+  </section>
+
+  <footer>Материал подготовлен по теме диссертации «Обучение порядку слов в русском языке учащихся китайской средней школы (уровень А2)»</footer>
+</div>
+
+<div class="tooltip" id="tooltip"></div>
+
+<script>
+  // Всплывающий перевод слов
+  const tooltip = document.getElementById('tooltip');
+  document.querySelectorAll('.word[data-zh]').forEach(w => {
+    w.addEventListener('click', function(e){
+      e.stopPropagation();
+      tooltip.innerHTML = '<span class="zh">' + this.dataset.zh + '</span>' +
+                          '<span class="py">' + this.dataset.py + '</span>';
+      const rect = this.getBoundingClientRect();
+      tooltip.style.display = 'block';
+      tooltip.style.left = (rect.left + window.scrollX) + 'px';
+      tooltip.style.top  = (rect.bottom + window.scrollY + 8) + 'px';
+    });
+  });
+  document.addEventListener('click', () => tooltip.style.display = 'none');
+
+  // Проверка теста
+  document.getElementById('checkBtn').addEventListener('click', function(){
+    let score = 0;
+    const questions = document.querySelectorAll('.question');
+    questions.forEach(q => {
+      q.querySelectorAll('label').forEach(l => l.classList.remove('correct','wrong'));
+      const correctLabel = q.querySelector('label[data-correct]');
+      const checked = q.querySelector('input:checked');
+      if (checked) {
+        const lab = checked.closest('label');
+        if (lab.hasAttribute('data-correct')) {
+          score++; lab.classList.add('correct');
+        } else {
+          lab.classList.add('wrong'); correctLabel.classList.add('correct');
+        }
+      } else {
+        correctLabel.classList.add('correct');
+      }
+    });
+    const total = questions.length;
+    let msg;
+    if (score === total)      msg = 'Отлично! 太棒了！';
+    else if (score >= 4)      msg = 'Хорошо! 很好！';
+    else if (score >= 2)      msg = 'Неплохо, но повторите текст. 不错，请再读一遍课文。';
+    else                      msg = 'Прочитайте текст ещё раз. 请再读一遍课文。';
+    document.getElementById('result').textContent =
+      'Ваш результат: ' + score + ' из ' + total + '. ' + msg;
+  });
+
+  // Подсказки к вопросам
+  document.querySelectorAll('.hint-btn').forEach(b => {
+    b.addEventListener('click', function(){
+      const h = this.nextElementSibling;
+      h.style.display = (h.style.display === 'block') ? 'none' : 'block';
+    });
+  });
+</script>
+</body>
+</html>
